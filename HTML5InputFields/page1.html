@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5InputsForm</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+<body>
+    <form action="#">
+        <header class="headerContainer"><h1>HTML 5 Input Fields</h1></header>
+         <div>
+            <label for="text">Enter Name</label>
+            <input type="text" id="text" name="text">
+            <error-output class="text-error" for="text"></error-output>
+         </div>
+         <div >
+             <label for="password">Enter Password</label>
+             <input type="password" id="password">
+         </div>
+         <div>
+             <label for="email">Enter Email</label>
+             <input type="email" id="email">
+         </div>
+         <div>
+            <label for="url">Enter Url</label>
+            <input type="url" id="url">
+        </div>
+        <div>
+            <label for="number">Enter number</label>
+            <input type="number" id="number">
+         </div>
+         <div>
+            <label for="search">search input type</label>
+            <input type="search" id="search">
+        </div>
+        <div class="nativeDateTime">
+            <label for="date">Enter date and time</label>
+            <input type="datetime-local" id="date">
+        </div>
+        <div>
+            <label for="salary">choose your salary</label>
+            <input type="range" id="salary" name="salary" min="30000" max="50000">
+            <output class="salary-output" for="salary">50000</output>
+        </div>
+        <div>
+            <input type="submit" value="submit" class="button12">
+        </div>
+
+    </form>
+
+    <script src="../js/HtmlPage1JScript.js"></script>
+    
+</body>
+</html>
