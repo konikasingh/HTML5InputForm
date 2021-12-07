@@ -22,7 +22,7 @@ const text1=document.querySelector('#email');
 const textError1=document.querySelector('.text-error1');
 text1.addEventListener('input',function()
 {
-     let nameRegex1=RegExp('^[a-z]{3}[.][a-z]*[@]{1}[bl]{2}[.]{1}[co]{2}[.]{1}[a-z]*$');
+     let nameRegex1=RegExp('^[0-9a-zA-Z]+[.+-_]{0,1}[0-9a-zA-Z]+[@][0-9a-zA-Z]+[.][a-zA-Z]{2,4}([a-zA-Z]{2,3}){0,1}');
      if(nameRegex1.test(text1.value))
      {  
          textError1.textContent=" ";
@@ -54,6 +54,26 @@ text2.addEventListener('input',function()
 
 
 });
+
+//UC5
+const text3=document.querySelector('#password');
+const textError3=document.querySelector('.text-errorp');
+text3.addEventListener('input',function()
+{
+     let nameRegex3=RegExp('^(?=.*[0-9])(?=.*[A-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8}$');
+     if(nameRegex3.test(text3.value))
+     {  
+         textError3.textContent=" ";
+     }
+     else
+     {
+         textError3.textContent="incorrect psw";
+
+     }
+
+
+});
+
 
 const salary=document.querySelector('#salary');
 const output=document.querySelector('.salary-output');
